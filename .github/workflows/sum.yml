@@ -21,5 +21,8 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Run Playwright Script (21f3001797@ds.study.iitm.ac.in)
+      - name: Install Playwright Browsers (21f3001797@ds.study.iitm.ac.in)
+        run: npx playwright install --with-deps
+
+      - name: Run Playwright Script
         run: npm start
